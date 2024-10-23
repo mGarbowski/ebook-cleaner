@@ -1,8 +1,5 @@
 To build an executable for windows
 
 ```shell
-mkdir build
-cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=../mingw_toolchain.cmake ..
-make
+x86_64-w64-mingw32-g++ -o clean_ebook.exe clean.cpp -static
 ```
